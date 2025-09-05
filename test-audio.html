@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Áudio - Love Calendar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+
+    .test-section {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background: #e91e63;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    button:hover {
+      background: #ad1457;
+    }
+
+    .console {
+      background: #f5f5f5;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Teste de Áudio - Love Calendar</h1>
+
+  <div class="test-section">
+    <h2>Teste Básico de Howler.js</h2>
+    <button onclick="testBasicHowler()">Testar Howler Básico</button>
+    <button onclick="testAudioController()">Testar AudioController</button>
+    <button onclick="testMusicFiles()">Testar Arquivos de Música</button>
+    <button onclick="clearConsole()">Limpar Console</button>
+  </div>
+
+  <div class="test-section">
+    <h2>Controles de Música</h2>
+    <button onclick="audioController.play()">Play</button>
+    <button onclick="audioController.pause()">Pause</button>
+    <button onclick="audioController.stop()">Stop</button>
+    <button onclick="audioController.changeSong('clair-de-lune')">Clair de Lune</button>
+    <button onclick="audioController.changeSong('lovers-rock')">Lovers Rock</button>
+    <button onclick="audioController.changeSong('love-theme')">Love Theme</button>
+  </div>
+
+  <div class="test-section">
+    <h2>Console de Debug</h2>
+    <div id="debug-console" class="console"></div>
+  </div>
+
+  <script src="js/howler.min.js"></script>
+  <script src="js/audio-controller.js"></script>
+  <script>
+    function log(message) {
+      const consoleDiv = document.getElementById('debug-console');
+      consoleDiv.textContent += new Date().toLocaleTimeString() + ': ' + message + '\n';
+      console.log(message);
+    }
+
+    function clearConsole() {
+      document.getElementById('debug-console').textContent = '';
+    }
+
+    function testBasicHowler() {
+      log('Testando Howler.js básico...');
+
+      if (typeof Howl === 'undefined') {
+        log('❌ ERRO: Howler.js não está carregado!');
+        return;
+      }
+
+      log('✅ Howler.js carregado com sucesso');
+
+      // Teste básico de Howler
+      const testSound = new Howl({
+        src: ['assets/music/Clair de Lune (Studio Version).mp3'],
+        volume: 0.3,
+        onload: () => log('✅ Música carregada com sucesso'),
+        onloaderror: (id, error) => log('❌ Erro ao carregar música: ' + error),
+        onplay: () => log('▶️ Música tocando'),
+        onpause: () => log('⏸️ Música pausada'),
+        onstop: () => log('⏹️ Música parada')
+      });
+
+      log('Tentando tocar música de teste...');
+      testSound.play();
+    }
+
+    function testAudioController() {
+      log('Testando AudioController...');
+
+      if (typeof audioController === 'undefined') {
+        log('❌ ERRO: AudioController não está definido!');
+        return;
+      }
+
+      log('✅ AudioController definido');
+      log('Estado atual:');
+      log('- Música atual: ' + audioController.getCurrentSong());
+      log('- Volume: ' + audioController.getVolume());
+      log('- Tocando: ' + audioController.isMusicPlaying());
+
+      log('Tentando carregar música...');
+      audioController.loadMusic('clair-de-lune');
+    }
+
+    function testMusicFiles() {
+      log('Testando arquivos de música...');
+
+      const musicFiles = [
+        'assets/music/Clair de Lune (Studio Version).mp3',
+        'assets/music/Lovers Rock.mp3',
+        'assets/music/Love Theme.mp3'
+      ];
+
+      musicFiles.forEach(file => {
+        fetch(file, { method: 'HEAD' })
+          .then(response => {
+            if (response.ok) {
+              log('✅ Arquivo encontrado: ' + file);
+            } else {
+              log('❌ Arquivo não encontrado: ' + file);
+            }
+          })
+          .catch(error => {
+            log('❌ Erro ao verificar arquivo ' + file + ': ' + error.message);
+          });
+      });
+    }
+
+    // Teste automático ao carregar
+    window.addEventListener('load', () => {
+      log('Página carregada. Iniciando testes automáticos...');
+      setTimeout(() => {
+        testBasicHowler();
+      }, 1000);
+    });
+  </script>
+</body>
+
+</html>
