@@ -44,25 +44,21 @@
       <p>Adicione uma foto ou vídeo especial com uma data e comentário.</p>
     </section>
     <section id="memoria-data">
-      <h2>Escolha a Data da Memória</h2>
+      <h2>Criar Nova Memória</h2>
       <form id="form-memoria" autocomplete="off">
         <div class="form-group">
-          <label for="data-memoria">Data:</label>
-          <input type="date" id="data-memoria" name="data-memoria" required />
+          <label for="titulo-memoria">Título:</label>
+          <input type="text" id="titulo-memoria" name="titulo-memoria" required
+            placeholder="Digite o título da memória" />
         </div>
         <div class="form-group">
-          <label for="arquivo-memoria">Arquivo (Imagem ou Vídeo):</label>
-          <input type="file" id="arquivo-memoria" name="arquivo-memoria" accept="image/*,video/*" required />
-          <label for="arquivo-memoria" class="custom-file-label">Escolher Arquivo</label>
+          <label for="descricao-memoria">Descrição:</label>
+          <textarea id="descricao-memoria" name="descricao-memoria" rows="4" required
+            placeholder="Descreva sua memória aqui..."></textarea>
         </div>
-        <div class="form-group">
-          <label for="comentario-memoria">Comente Como foi o encontro:</label>
-          <textarea id="comentario-memoria" name="comentario-memoria" rows="4"
-            placeholder="Escreva seu comentário aqui..."></textarea>
-        </div>
-        <div id="preview"></div>
-        <button type="submit" id="salvar-btn" disabled>Salvar Memória</button>
+        <button type="submit" id="salvar-btn">Salvar Memória</button>
       </form>
+      <div id="message"></div>
       <div class="menu-links">
         <a href="memories.html">Ver Memórias Salvas</a>
       </div>
@@ -74,6 +70,7 @@
   <audio id="bg-music" loop></audio>
   <script src="js/howler.min.js"></script>
   <script src="js/audio-controller.js"></script>
+  <script src="js/auth.js"></script>
   <script src="js/main.js"></script>
 </body>
 
