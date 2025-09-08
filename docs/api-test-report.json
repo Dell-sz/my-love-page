@@ -1,0 +1,360 @@
+﻿{
+    "ExecutionDate":  {
+                          "value":  "\/Date(1757251040539)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "domingo, 7 de setembro de 2025 10:17:20"
+                      },
+    "Results":  [
+
+                ],
+    "AllResponses":  {
+                         "PUT /api/memories/68bd85dd3ff0fc7692810da6":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o com sÃ­mbolos: \\u003c\\u003e{}[]|\\\\\",\r\n    \"title\":  \"Atualizado: MemÃ³ria com caracteres especiais: Ã¡Ã©Ã­Ã³Ãº Ã± @#$%^\\u0026*()\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRjM2ZmMGZjNzY5MjgxMGQ5NCIsImlhdCI6MTc1NzI1MTAzNiwiZXhwIjoxNzU3ODU1ODM2fQ.vz8hRHRRyW9PbjJ6LSmmaGs0gIOg4ImUI6qoqEbcg_U"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85dd3ff0fc7692810da6"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85dd3ff0fc7692810da6\",\r\n                 \"title\":  \"Atualizado: Memória com caracteres especiais: áéíóú ñ @#$%^\\u0026*()\",\r\n                 \"description\":  \"Atualizado: Descrição com símbolos: \\u003c\\u003e{}[]|\\\\\",\r\n                 \"date\":  \"2025-09-07T13:17:17.627Z\",\r\n                 \"userId\":  \"68bd85dc3ff0fc7692810d94\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:17.627Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:17.738Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "GET /api/memories":  {
+                                                   "Error":  "O servidor remoto retornou um erro: (401) Não Autorizado. (Status: 401)",
+                                                   "Request":  {
+                                                                   "Method":  "GET",
+                                                                   "Body":  "",
+                                                                   "Headers":  {
+
+                                                                               },
+                                                                   "Uri":  "http://localhost:5000/api/memories"
+                                                               },
+                                                   "Response":  null
+                                               },
+                         "PUT /api/memories/68bd85dc3ff0fc7692810d98":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o simples\",\r\n    \"title\":  \"Atualizado: MemÃ³ria curta\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRjM2ZmMGZjNzY5MjgxMGQ5NCIsImlhdCI6MTc1NzI1MTAzNiwiZXhwIjoxNzU3ODU1ODM2fQ.vz8hRHRRyW9PbjJ6LSmmaGs0gIOg4ImUI6qoqEbcg_U"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85dc3ff0fc7692810d98"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85dc3ff0fc7692810d98\",\r\n                 \"title\":  \"Atualizado: Memória curta\",\r\n                 \"description\":  \"Atualizado: Descrição simples\",\r\n                 \"date\":  \"2025-09-07T13:17:16.899Z\",\r\n                 \"userId\":  \"68bd85dc3ff0fc7692810d94\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:16.899Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:17.117Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "DELETE /api/memories/68bd85df3ff0fc7692810dc3":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85df3ff0fc7692810dc3"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           },
+                         "PUT /api/memories/68bd85dc3ff0fc7692810d89":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o para data futura\",\r\n    \"title\":  \"Atualizado: MemÃ³ria futura\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRhM2ZmMGZjNzY5MjgxMGQ3MCIsImlhdCI6MTc1NzI1MTAzNCwiZXhwIjoxNzU3ODU1ODM0fQ.czDN2Ehz-4-BV-luhxWD9j_kul5QFGrOpfhirmO8SC4"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85dc3ff0fc7692810d89"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85dc3ff0fc7692810d89\",\r\n                 \"title\":  \"Atualizado: Memória futura\",\r\n                 \"description\":  \"Atualizado: Descrição para data futura\",\r\n                 \"date\":  \"2025-09-07T13:17:16.026Z\",\r\n                 \"userId\":  \"68bd85da3ff0fc7692810d70\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:16.027Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:16.110Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "PUT /api/memories/68bd85dd3ff0fc7692810d9f":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o tambÃ©m longa para testar limites de caracteres e formataÃ§Ã£o\",\r\n    \"title\":  \"Atualizado: MemÃ³ria com tÃ­tulo muito longo que pode causar problemas de validaÃ§Ã£o ou exibiÃ§Ã£o\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRjM2ZmMGZjNzY5MjgxMGQ5NCIsImlhdCI6MTc1NzI1MTAzNiwiZXhwIjoxNzU3ODU1ODM2fQ.vz8hRHRRyW9PbjJ6LSmmaGs0gIOg4ImUI6qoqEbcg_U"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85dd3ff0fc7692810d9f"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85dd3ff0fc7692810d9f\",\r\n                 \"title\":  \"Atualizado: Memória com título muito longo que pode causar problemas de validação ou exibição\",\r\n                 \"description\":  \"Atualizado: Descrição também longa para testar limites de caracteres e formatação\",\r\n                 \"date\":  \"2025-09-07T13:17:17.331Z\",\r\n                 \"userId\":  \"68bd85dc3ff0fc7692810d94\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:17.331Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:17.437Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "DELETE /api/memories/68bd85de3ff0fc7692810dbc":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85de3ff0fc7692810dbc"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           },
+                         "DELETE /api/memories/68bd85dc3ff0fc7692810d98":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRjM2ZmMGZjNzY5MjgxMGQ5NCIsImlhdCI6MTc1NzI1MTAzNiwiZXhwIjoxNzU3ODU1ODM2fQ.vz8hRHRRyW9PbjJ6LSmmaGs0gIOg4ImUI6qoqEbcg_U"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85dc3ff0fc7692810d98"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           },
+                         "POST /api/auth/register":  {
+                                                         "Error":  "",
+                                                         "Request":  {
+                                                                         "Method":  "POST",
+                                                                         "Body":  "{\r\n    \"email\":  \"teste3@teste.com\",\r\n    \"name\":  \"Teste3\",\r\n    \"password\":  \"123456\"\r\n}",
+                                                                         "Headers":  {
+
+                                                                                     },
+                                                                         "Uri":  "http://localhost:5000/api/auth/register"
+                                                                     },
+                                                         "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"user\":  {\r\n                              \"id\":  \"68bd85de3ff0fc7692810db8\",\r\n                              \"name\":  \"Teste3\",\r\n                              \"email\":  \"teste3@teste.com\"\r\n                          },\r\n                 \"token\":  \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw\"\r\n             }\r\n}"
+                                                     },
+                         "PUT /api/memories/68bd85df3ff0fc7692810dc3":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o tambÃ©m longa para testar limites de caracteres e formataÃ§Ã£o\",\r\n    \"title\":  \"Atualizado: MemÃ³ria com tÃ­tulo muito longo que pode causar problemas de validaÃ§Ã£o ou exibiÃ§Ã£o\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85df3ff0fc7692810dc3"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85df3ff0fc7692810dc3\",\r\n                 \"title\":  \"Atualizado: Memória com título muito longo que pode causar problemas de validação ou exibição\",\r\n                 \"description\":  \"Atualizado: Descrição também longa para testar limites de caracteres e formatação\",\r\n                 \"date\":  \"2025-09-07T13:17:19.227Z\",\r\n                 \"userId\":  \"68bd85de3ff0fc7692810db8\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:19.227Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:19.374Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "DELETE /api/memories/68bd85db3ff0fc7692810d82":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRhM2ZmMGZjNzY5MjgxMGQ3MCIsImlhdCI6MTc1NzI1MTAzNCwiZXhwIjoxNzU3ODU1ODM0fQ.czDN2Ehz-4-BV-luhxWD9j_kul5QFGrOpfhirmO8SC4"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85db3ff0fc7692810d82"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           },
+                         "DELETE /api/memories/68bd85dd3ff0fc7692810d9f":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRjM2ZmMGZjNzY5MjgxMGQ5NCIsImlhdCI6MTc1NzI1MTAzNiwiZXhwIjoxNzU3ODU1ODM2fQ.vz8hRHRRyW9PbjJ6LSmmaGs0gIOg4ImUI6qoqEbcg_U"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85dd3ff0fc7692810d9f"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           },
+                         "DELETE /api/memories/68bd85db3ff0fc7692810d7b":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRhM2ZmMGZjNzY5MjgxMGQ3MCIsImlhdCI6MTc1NzI1MTAzNCwiZXhwIjoxNzU3ODU1ODM0fQ.czDN2Ehz-4-BV-luhxWD9j_kul5QFGrOpfhirmO8SC4"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85db3ff0fc7692810d7b"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           },
+                         "PUT /api/memories/68bd85db3ff0fc7692810d7b":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o tambÃ©m longa para testar limites de caracteres e formataÃ§Ã£o\",\r\n    \"title\":  \"Atualizado: MemÃ³ria com tÃ­tulo muito longo que pode causar problemas de validaÃ§Ã£o ou exibiÃ§Ã£o\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRhM2ZmMGZjNzY5MjgxMGQ3MCIsImlhdCI6MTc1NzI1MTAzNCwiZXhwIjoxNzU3ODU1ODM0fQ.czDN2Ehz-4-BV-luhxWD9j_kul5QFGrOpfhirmO8SC4"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85db3ff0fc7692810d7b"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85db3ff0fc7692810d7b\",\r\n                 \"title\":  \"Atualizado: Memória com título muito longo que pode causar problemas de validação ou exibição\",\r\n                 \"description\":  \"Atualizado: Descrição também longa para testar limites de caracteres e formatação\",\r\n                 \"date\":  \"2025-09-07T13:17:15.372Z\",\r\n                 \"userId\":  \"68bd85da3ff0fc7692810d70\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:15.372Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:15.488Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "GET /api/health":  {
+                                                 "Error":  "",
+                                                 "Request":  {
+                                                                 "Method":  "GET",
+                                                                 "Body":  "",
+                                                                 "Headers":  {
+
+                                                                             },
+                                                                 "Uri":  "http://localhost:5000/api/health"
+                                                             },
+                                                 "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"API is running\"\r\n}"
+                                             },
+                         "DELETE /api/memories/68bd85df3ff0fc7692810dca":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85df3ff0fc7692810dca"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           },
+                         "PUT /api/memories/68bd85df3ff0fc7692810dd1":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o para data futura\",\r\n    \"title\":  \"Atualizado: MemÃ³ria futura\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85df3ff0fc7692810dd1"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85df3ff0fc7692810dd1\",\r\n                 \"title\":  \"Atualizado: Memória futura\",\r\n                 \"description\":  \"Atualizado: Descrição para data futura\",\r\n                 \"date\":  \"2025-09-07T13:17:19.957Z\",\r\n                 \"userId\":  \"68bd85de3ff0fc7692810db8\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:19.957Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:20.046Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "DELETE /api/memories/68bd85dd3ff0fc7692810dad":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRjM2ZmMGZjNzY5MjgxMGQ5NCIsImlhdCI6MTc1NzI1MTAzNiwiZXhwIjoxNzU3ODU1ODM2fQ.vz8hRHRRyW9PbjJ6LSmmaGs0gIOg4ImUI6qoqEbcg_U"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85dd3ff0fc7692810dad"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           },
+                         "PUT /api/memories/68bd85db3ff0fc7692810d82":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o com sÃ­mbolos: \\u003c\\u003e{}[]|\\\\\",\r\n    \"title\":  \"Atualizado: MemÃ³ria com caracteres especiais: Ã¡Ã©Ã­Ã³Ãº Ã± @#$%^\\u0026*()\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRhM2ZmMGZjNzY5MjgxMGQ3MCIsImlhdCI6MTc1NzI1MTAzNCwiZXhwIjoxNzU3ODU1ODM0fQ.czDN2Ehz-4-BV-luhxWD9j_kul5QFGrOpfhirmO8SC4"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85db3ff0fc7692810d82"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85db3ff0fc7692810d82\",\r\n                 \"title\":  \"Atualizado: Memória com caracteres especiais: áéíóú ñ @#$%^\\u0026*()\",\r\n                 \"description\":  \"Atualizado: Descrição com símbolos: \\u003c\\u003e{}[]|\\\\\",\r\n                 \"date\":  \"2025-09-07T13:17:15.747Z\",\r\n                 \"userId\":  \"68bd85da3ff0fc7692810d70\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:15.748Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:15.848Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "PUT /api/memories/68bd85dd3ff0fc7692810dad":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o para data futura\",\r\n    \"title\":  \"Atualizado: MemÃ³ria futura\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRjM2ZmMGZjNzY5MjgxMGQ5NCIsImlhdCI6MTc1NzI1MTAzNiwiZXhwIjoxNzU3ODU1ODM2fQ.vz8hRHRRyW9PbjJ6LSmmaGs0gIOg4ImUI6qoqEbcg_U"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85dd3ff0fc7692810dad"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85dd3ff0fc7692810dad\",\r\n                 \"title\":  \"Atualizado: Memória futura\",\r\n                 \"description\":  \"Atualizado: Descrição para data futura\",\r\n                 \"date\":  \"2025-09-07T13:17:17.957Z\",\r\n                 \"userId\":  \"68bd85dc3ff0fc7692810d94\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:17.958Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:18.059Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "DELETE /api/memories/68bd85dd3ff0fc7692810da6":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRjM2ZmMGZjNzY5MjgxMGQ5NCIsImlhdCI6MTc1NzI1MTAzNiwiZXhwIjoxNzU3ODU1ODM2fQ.vz8hRHRRyW9PbjJ6LSmmaGs0gIOg4ImUI6qoqEbcg_U"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85dd3ff0fc7692810da6"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           },
+                         "PUT /api/memories/68bd85de3ff0fc7692810dbc":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o simples\",\r\n    \"title\":  \"Atualizado: MemÃ³ria curta\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85de3ff0fc7692810dbc"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85de3ff0fc7692810dbc\",\r\n                 \"title\":  \"Atualizado: Memória curta\",\r\n                 \"description\":  \"Atualizado: Descrição simples\",\r\n                 \"date\":  \"2025-09-07T13:17:18.909Z\",\r\n                 \"userId\":  \"68bd85de3ff0fc7692810db8\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:18.909Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:19.008Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "PUT /api/memories/68bd85da3ff0fc7692810d74":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o simples\",\r\n    \"title\":  \"Atualizado: MemÃ³ria curta\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRhM2ZmMGZjNzY5MjgxMGQ3MCIsImlhdCI6MTc1NzI1MTAzNCwiZXhwIjoxNzU3ODU1ODM0fQ.czDN2Ehz-4-BV-luhxWD9j_kul5QFGrOpfhirmO8SC4"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85da3ff0fc7692810d74"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85da3ff0fc7692810d74\",\r\n                 \"title\":  \"Atualizado: Memória curta\",\r\n                 \"description\":  \"Atualizado: Descrição simples\",\r\n                 \"date\":  \"2025-09-07T13:17:14.821Z\",\r\n                 \"userId\":  \"68bd85da3ff0fc7692810d70\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:14.821Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:15.014Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "POST /api/memories":  {
+                                                    "Error":  "O servidor remoto retornou um erro: (401) Não Autorizado. (Status: 401)",
+                                                    "Request":  {
+                                                                    "Method":  "POST",
+                                                                    "Body":  "{\r\n    \"description\":  \"DescriÃ§Ã£o sem tÃ­tulo\"\r\n}",
+                                                                    "Headers":  {
+                                                                                    "Authorization":  "Bearer invalid_token"
+                                                                                },
+                                                                    "Uri":  "http://localhost:5000/api/memories"
+                                                                },
+                                                    "Response":  null
+                                                },
+                         "DELETE /api/memories/68bd85df3ff0fc7692810dd1":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85df3ff0fc7692810dd1"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           },
+                         "DELETE /api/memories/68bd85da3ff0fc7692810d74":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRhM2ZmMGZjNzY5MjgxMGQ3MCIsImlhdCI6MTc1NzI1MTAzNCwiZXhwIjoxNzU3ODU1ODM0fQ.czDN2Ehz-4-BV-luhxWD9j_kul5QFGrOpfhirmO8SC4"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85da3ff0fc7692810d74"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           },
+                         "PUT /api/memories/68bd85df3ff0fc7692810dca":  {
+                                                                            "Error":  "",
+                                                                            "Request":  {
+                                                                                            "Method":  "PUT",
+                                                                                            "Body":  "{\r\n    \"description\":  \"Atualizado: DescriÃ§Ã£o com sÃ­mbolos: \\u003c\\u003e{}[]|\\\\\",\r\n    \"title\":  \"Atualizado: MemÃ³ria com caracteres especiais: Ã¡Ã©Ã­Ã³Ãº Ã± @#$%^\\u0026*()\"\r\n}",
+                                                                                            "Headers":  {
+                                                                                                            "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw"
+                                                                                                        },
+                                                                                            "Uri":  "http://localhost:5000/api/memories/68bd85df3ff0fc7692810dca"
+                                                                                        },
+                                                                            "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"_id\":  \"68bd85df3ff0fc7692810dca\",\r\n                 \"title\":  \"Atualizado: Memória com caracteres especiais: áéíóú ñ @#$%^\\u0026*()\",\r\n                 \"description\":  \"Atualizado: Descrição com símbolos: \\u003c\\u003e{}[]|\\\\\",\r\n                 \"date\":  \"2025-09-07T13:17:19.640Z\",\r\n                 \"userId\":  \"68bd85de3ff0fc7692810db8\",\r\n                 \"createdAt\":  \"2025-09-07T13:17:19.640Z\",\r\n                 \"updatedAt\":  \"2025-09-07T13:17:19.767Z\",\r\n                 \"__v\":  0\r\n             }\r\n}"
+                                                                        },
+                         "POST /api/auth/login":  {
+                                                      "Error":  "",
+                                                      "Request":  {
+                                                                      "Method":  "POST",
+                                                                      "Body":  "{\r\n    \"password\":  \"123456\",\r\n    \"email\":  \"teste3@teste.com\"\r\n}",
+                                                                      "Headers":  {
+
+                                                                                  },
+                                                                      "Uri":  "http://localhost:5000/api/auth/login"
+                                                                  },
+                                                      "Response":  "{\r\n    \"success\":  true,\r\n    \"data\":  {\r\n                 \"user\":  {\r\n                              \"id\":  \"68bd85de3ff0fc7692810db8\",\r\n                              \"name\":  \"Teste3\",\r\n                              \"email\":  \"teste3@teste.com\"\r\n                          },\r\n                 \"token\":  \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw\"\r\n             }\r\n}"
+                                                  },
+                         "DELETE /api/memories/68bd85dc3ff0fc7692810d89":  {
+                                                                               "Error":  "",
+                                                                               "Request":  {
+                                                                                               "Method":  "DELETE",
+                                                                                               "Body":  "",
+                                                                                               "Headers":  {
+                                                                                                               "Authorization":  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRhM2ZmMGZjNzY5MjgxMGQ3MCIsImlhdCI6MTc1NzI1MTAzNCwiZXhwIjoxNzU3ODU1ODM0fQ.czDN2Ehz-4-BV-luhxWD9j_kul5QFGrOpfhirmO8SC4"
+                                                                                                           },
+                                                                                               "Uri":  "http://localhost:5000/api/memories/68bd85dc3ff0fc7692810d89"
+                                                                                           },
+                                                                               "Response":  "{\r\n    \"success\":  true,\r\n    \"message\":  \"Memory deleted successfully\"\r\n}"
+                                                                           }
+                     }
+}
