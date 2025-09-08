@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Love Calendar 💖</title>
+  <link rel="stylesheet" href="/frontend/css/style.css" />
+  <link rel="icon" href="/frontend/assets/logo.png" />
+</head>
+
+<body>
+  <div class="hearts"></div>
+  <header class="main-header">
+    <div class="logo">
+      <img src="/frontend/assets/logo.png" alt="Love Calendar Logo" />
+      <span>Love Calendar 💖</span>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Login</h1>
+      <form id="login-form" autocomplete="off">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required minlength="6" />
+        </div>
+        <div class="form-group">
+          <label for="keep-logged-in">
+            <input type="checkbox" id="keep-logged-in" name="keep-logged-in" />
+            Manter-me logado
+          </label>
+        </div>
+        <button type="submit" id="login-btn">Entrar</button>
+      </form>
+      <p>Não tem uma conta? <a href="register.html">Registre-se aqui</a></p>
+      <p><a href="landing.html">Voltar ao Início</a></p>
+      <div id="message"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Love Calendar. Todos os direitos reservados.</p>
+  </footer>
+  <script src="/frontend/js/auth.js"></script>
+</body>
+
+</html>

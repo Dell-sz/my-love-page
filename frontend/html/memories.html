@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Calendar 💖 - Memórias Salvas</title>
+  <link rel="stylesheet" href="/frontend/css/style.css" />
+  <link rel="icon" href="/frontend/assets/logo.png" />
+</head>
+
+<body>
+  <div class="hearts"></div>
+
+  <header class="main-header">
+    <div class="logo">
+      <img src="/frontend/assets/logo.png" alt="Love Calendar Logo" />
+      <span>Love Calendar 💖</span>
+    </div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="save-memory.html">Nova Memória</a>
+      <a href="memories.html">Minhas Memórias</a>
+      <a href="preferences.html">Preferências</a>
+      <a href="about.html">Sobre</a>
+    </nav>
+    <div class="hamburger-menu">
+      <button class="hamburger-btn" title="Menu de opções">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <div class="hamburger-dropdown">
+        <a href="index.html">Menu Inicial</a>
+        <a href="preferences.html">Preferências de Usuário</a>
+        <a href="memories.html">Memórias Salvas</a>
+        <a href="save-memory.html">Salvar Nova Memória</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Memórias Salvas</h1>
+      <p>Veja e gerencie suas memórias salvas.</p>
+    </section>
+    <section id="lembrancas-salvas">
+      <h2>Lembranças Salvas</h2>
+      <div id="lista-lembrancas"></div>
+
+      <!-- Modal for viewing full-size images/videos -->
+      <div id="media-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <div id="modal-media-container"></div>
+        </div>
+      </div>
+      <div class="menu-links">
+        <a href="save-memory.html">Salvar Nova Memória</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Love Calendar. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+  <audio id="bg-music" loop></audio>
+  <script src="/frontend/js/howler.min.js"></script>
+  <script src="/frontend/js/audio-controller.js"></script>
+  <script src="/frontend/js/auth.js"></script>
+  <script src="/frontend/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Calendar 💖 - Salvar Memória</title>
+  <link rel="stylesheet" href="/frontend/css/style.css" />
+  <link rel="icon" href="/frontend/assets/logo.png" />
+</head>
+
+<body>
+  <div class="hearts"></div>
+
+  <header class="main-header">
+    <div class="logo">
+      <img src="/frontend/assets/logo.png" alt="Love Calendar Logo" />
+      <span>Love Calendar 💖</span>
+    </div>
+    <nav>
+      <a href="landing.html">Início</a>
+      <a href="save-memory.html">Nova Memória</a>
+      <a href="memories.html">Minhas Memórias</a>
+      <a href="preferences.html">Preferências</a>
+      <a href="about.html">Sobre</a>
+    </nav>
+    <div class="hamburger-menu">
+      <button class="hamburger-btn" title="Menu de opções">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <div class="hamburger-dropdown">
+        <a href="landing.html">Menu Inicial</a>
+        <a href="preferences.html">Preferências de Usuário</a>
+        <a href="memories.html">Memórias Salvas</a>
+        <a href="save-memory.html">Salvar Nova Memória</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Salvar Nova Memória</h1>
+      <p>Adicione uma data, título e descrição para sua lembrança.</p>
+    </section>
+    <section id="memoria-data">
+      <h2>Salvar Nova Memória</h2>
+      <form id="form-memoria" autocomplete="off">
+        <div class="form-group">
+          <label for="data-memoria">Data da Lembrança:</label>
+          <input type="date" id="data-memoria" name="data-memoria" required />
+        </div>
+        <div class="form-group">
+          <label for="titulo-memoria">Título da Lembrança:</label>
+          <input type="text" id="titulo-memoria" name="titulo-memoria" required
+            placeholder="Digite o título da lembrança..." class="input-text" />
+        </div>
+        <div class="form-group">
+          <label for="descricao-memoria">Descrição:</label>
+          <textarea id="descricao-memoria" name="descricao-memoria" rows="4"
+            placeholder="Escreva sua descrição aqui..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="media-memoria">Fotos ou Vídeos (opcional):</label>
+          <input type="file" id="media-memoria" name="media-memoria" accept="image/*,video/*" multiple />
+          <label for="preview" class="preview-label">Pré-visualização dos arquivos selecionados:</label>
+          <div id="preview"></div>
+        </div>
+        <button type="submit" id="salvar-btn">Salvar Memória</button>
+      </form>
+      <div id="message"></div>
+      <div class="menu-links">
+        <a href="memories.html">Ver Memórias Salvas</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Love Calendar. Todos os direitos reservados.</p>
+  </footer>
+  <script src="/frontend/js/auth.js"></script>
+  <script src="/frontend/js/main.js"></script>
+</body>
+
+</html>

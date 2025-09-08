@@ -1,0 +1,565 @@
+2025-09-07 10:17:13 - Iniciando testes automatizados da API My Love Page
+2025-09-07 10:17:14 - Executando teste: Health Check da API - GET /api/health
+2025-09-07 10:17:14 - Resultado: Passou
+2025-09-07 10:17:14 - Response: {
+    "success":  true,
+    "message":  "API is running"
+}
+2025-09-07 10:17:14 - Iniciando testes para usuÃ¡rio: teste1@teste.com
+2025-09-07 10:17:14 - Executando teste: Registro de usuÃ¡rio teste1@teste.com - POST /api/auth/register
+2025-09-07 10:17:14 - Resultado: Passou
+2025-09-07 10:17:14 - Response: {
+    "success":  true,
+    "data":  {
+                 "user":  {
+                              "id":  "68bd85da3ff0fc7692810d70",
+                              "name":  "Teste1",
+                              "email":  "teste1@teste.com"
+                          },
+                 "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRhM2ZmMGZjNzY5MjgxMGQ3MCIsImlhdCI6MTc1NzI1MTAzNCwiZXhwIjoxNzU3ODU1ODM0fQ.czDN2Ehz-4-BV-luhxWD9j_kul5QFGrOpfhirmO8SC4"
+             }
+}
+2025-09-07 10:17:14 - Executando teste: Login de usuÃ¡rio teste1@teste.com - POST /api/auth/login
+2025-09-07 10:17:14 - Resultado: Passou
+2025-09-07 10:17:14 - Response: {
+    "success":  true,
+    "data":  {
+                 "user":  {
+                              "id":  "68bd85da3ff0fc7692810d70",
+                              "name":  "Teste1",
+                              "email":  "teste1@teste.com"
+                          },
+                 "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRhM2ZmMGZjNzY5MjgxMGQ3MCIsImlhdCI6MTc1NzI1MTAzNCwiZXhwIjoxNzU3ODU1ODM0fQ.czDN2Ehz-4-BV-luhxWD9j_kul5QFGrOpfhirmO8SC4"
+             }
+}
+2025-09-07 10:17:14 - Executando teste: Criar memÃ³ria para teste1@teste.com: MemÃ³ria curta - POST /api/memories
+2025-09-07 10:17:14 - Resultado: Passou
+2025-09-07 10:17:14 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória curta",
+                 "description":  "Descrição simples",
+                 "date":  "2025-09-07T13:17:14.821Z",
+                 "userId":  "68bd85da3ff0fc7692810d70",
+                 "_id":  "68bd85da3ff0fc7692810d74",
+                 "createdAt":  "2025-09-07T13:17:14.821Z",
+                 "updatedAt":  "2025-09-07T13:17:14.821Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:14 - Executando teste: Atualizar memÃ³ria para teste1@teste.com - PUT /api/memories/68bd85da3ff0fc7692810d74
+2025-09-07 10:17:15 - Resultado: Passou
+2025-09-07 10:17:15 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85da3ff0fc7692810d74",
+                 "title":  "Atualizado: Memória curta",
+                 "description":  "Atualizado: Descrição simples",
+                 "date":  "2025-09-07T13:17:14.821Z",
+                 "userId":  "68bd85da3ff0fc7692810d70",
+                 "createdAt":  "2025-09-07T13:17:14.821Z",
+                 "updatedAt":  "2025-09-07T13:17:15.014Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:15 - Executando teste: Deletar memÃ³ria para teste1@teste.com - DELETE /api/memories/68bd85da3ff0fc7692810d74
+2025-09-07 10:17:15 - Resultado: Passou
+2025-09-07 10:17:15 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:15 - Executando teste: Criar memÃ³ria para teste1@teste.com: MemÃ³ria com tÃ­tulo muito longo que pode causar problemas de validaÃ§Ã£o ou exibiÃ§Ã£o - POST /api/memories
+2025-09-07 10:17:15 - Resultado: Passou
+2025-09-07 10:17:15 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória com título muito longo que pode causar problemas de validação ou exibição",
+                 "description":  "Descrição também longa para testar limites de caracteres e formatação",
+                 "date":  "2025-09-07T13:17:15.372Z",
+                 "userId":  "68bd85da3ff0fc7692810d70",
+                 "_id":  "68bd85db3ff0fc7692810d7b",
+                 "createdAt":  "2025-09-07T13:17:15.372Z",
+                 "updatedAt":  "2025-09-07T13:17:15.372Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:15 - Executando teste: Atualizar memÃ³ria para teste1@teste.com - PUT /api/memories/68bd85db3ff0fc7692810d7b
+2025-09-07 10:17:15 - Resultado: Passou
+2025-09-07 10:17:15 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85db3ff0fc7692810d7b",
+                 "title":  "Atualizado: Memória com título muito longo que pode causar problemas de validação ou exibição",
+                 "description":  "Atualizado: Descrição também longa para testar limites de caracteres e formatação",
+                 "date":  "2025-09-07T13:17:15.372Z",
+                 "userId":  "68bd85da3ff0fc7692810d70",
+                 "createdAt":  "2025-09-07T13:17:15.372Z",
+                 "updatedAt":  "2025-09-07T13:17:15.488Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:15 - Executando teste: Deletar memÃ³ria para teste1@teste.com - DELETE /api/memories/68bd85db3ff0fc7692810d7b
+2025-09-07 10:17:15 - Resultado: Passou
+2025-09-07 10:17:15 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:15 - Executando teste: Criar memÃ³ria para teste1@teste.com: MemÃ³ria com caracteres especiais: Ã¡Ã©Ã­Ã³Ãº Ã± @#$%^&*() - POST /api/memories
+2025-09-07 10:17:15 - Resultado: Passou
+2025-09-07 10:17:15 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória com caracteres especiais: áéíóú ñ @#$%^\u0026*()",
+                 "description":  "Descrição com símbolos: \u003c\u003e{}[]|\\",
+                 "date":  "2025-09-07T13:17:15.747Z",
+                 "userId":  "68bd85da3ff0fc7692810d70",
+                 "_id":  "68bd85db3ff0fc7692810d82",
+                 "createdAt":  "2025-09-07T13:17:15.748Z",
+                 "updatedAt":  "2025-09-07T13:17:15.748Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:15 - Executando teste: Atualizar memÃ³ria para teste1@teste.com - PUT /api/memories/68bd85db3ff0fc7692810d82
+2025-09-07 10:17:15 - Resultado: Passou
+2025-09-07 10:17:15 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85db3ff0fc7692810d82",
+                 "title":  "Atualizado: Memória com caracteres especiais: áéíóú ñ @#$%^\u0026*()",
+                 "description":  "Atualizado: Descrição com símbolos: \u003c\u003e{}[]|\\",
+                 "date":  "2025-09-07T13:17:15.747Z",
+                 "userId":  "68bd85da3ff0fc7692810d70",
+                 "createdAt":  "2025-09-07T13:17:15.748Z",
+                 "updatedAt":  "2025-09-07T13:17:15.848Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:15 - Executando teste: Deletar memÃ³ria para teste1@teste.com - DELETE /api/memories/68bd85db3ff0fc7692810d82
+2025-09-07 10:17:15 - Resultado: Passou
+2025-09-07 10:17:15 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:15 - Executando teste: Criar memÃ³ria para teste1@teste.com: MemÃ³ria futura - POST /api/memories
+2025-09-07 10:17:16 - Resultado: Passou
+2025-09-07 10:17:16 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória futura",
+                 "description":  "Descrição para data futura",
+                 "date":  "2025-09-07T13:17:16.026Z",
+                 "userId":  "68bd85da3ff0fc7692810d70",
+                 "_id":  "68bd85dc3ff0fc7692810d89",
+                 "createdAt":  "2025-09-07T13:17:16.027Z",
+                 "updatedAt":  "2025-09-07T13:17:16.027Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:16 - Executando teste: Atualizar memÃ³ria para teste1@teste.com - PUT /api/memories/68bd85dc3ff0fc7692810d89
+2025-09-07 10:17:16 - Resultado: Passou
+2025-09-07 10:17:16 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85dc3ff0fc7692810d89",
+                 "title":  "Atualizado: Memória futura",
+                 "description":  "Atualizado: Descrição para data futura",
+                 "date":  "2025-09-07T13:17:16.026Z",
+                 "userId":  "68bd85da3ff0fc7692810d70",
+                 "createdAt":  "2025-09-07T13:17:16.027Z",
+                 "updatedAt":  "2025-09-07T13:17:16.110Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:16 - Executando teste: Deletar memÃ³ria para teste1@teste.com - DELETE /api/memories/68bd85dc3ff0fc7692810d89
+2025-09-07 10:17:16 - Resultado: Passou
+2025-09-07 10:17:16 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:16 - Executando teste: Criar memÃ³ria para teste1@teste.com:  - POST /api/memories
+2025-09-07 10:17:16 - Resultado: Falhou
+2025-09-07 10:17:16 - Erro: O servidor remoto retornou um erro: (400) Solicitação Incorreta. (Status: 400)
+2025-09-07 10:17:16 - Executando teste: Listar memÃ³rias para teste1@teste.com - GET /api/memories
+2025-09-07 10:17:16 - Resultado: Passou
+2025-09-07 10:17:16 - Response: {
+    "success":  true,
+    "data":  [
+
+             ]
+}
+2025-09-07 10:17:16 - Iniciando testes para usuÃ¡rio: teste2@teste.com
+2025-09-07 10:17:16 - Executando teste: Registro de usuÃ¡rio teste2@teste.com - POST /api/auth/register
+2025-09-07 10:17:16 - Resultado: Passou
+2025-09-07 10:17:16 - Response: {
+    "success":  true,
+    "data":  {
+                 "user":  {
+                              "id":  "68bd85dc3ff0fc7692810d94",
+                              "name":  "Teste2",
+                              "email":  "teste2@teste.com"
+                          },
+                 "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRjM2ZmMGZjNzY5MjgxMGQ5NCIsImlhdCI6MTc1NzI1MTAzNiwiZXhwIjoxNzU3ODU1ODM2fQ.vz8hRHRRyW9PbjJ6LSmmaGs0gIOg4ImUI6qoqEbcg_U"
+             }
+}
+2025-09-07 10:17:16 - Executando teste: Login de usuÃ¡rio teste2@teste.com - POST /api/auth/login
+2025-09-07 10:17:16 - Resultado: Passou
+2025-09-07 10:17:16 - Response: {
+    "success":  true,
+    "data":  {
+                 "user":  {
+                              "id":  "68bd85dc3ff0fc7692810d94",
+                              "name":  "Teste2",
+                              "email":  "teste2@teste.com"
+                          },
+                 "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRjM2ZmMGZjNzY5MjgxMGQ5NCIsImlhdCI6MTc1NzI1MTAzNiwiZXhwIjoxNzU3ODU1ODM2fQ.vz8hRHRRyW9PbjJ6LSmmaGs0gIOg4ImUI6qoqEbcg_U"
+             }
+}
+2025-09-07 10:17:16 - Executando teste: Criar memÃ³ria para teste2@teste.com: MemÃ³ria curta - POST /api/memories
+2025-09-07 10:17:16 - Resultado: Passou
+2025-09-07 10:17:16 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória curta",
+                 "description":  "Descrição simples",
+                 "date":  "2025-09-07T13:17:16.899Z",
+                 "userId":  "68bd85dc3ff0fc7692810d94",
+                 "_id":  "68bd85dc3ff0fc7692810d98",
+                 "createdAt":  "2025-09-07T13:17:16.899Z",
+                 "updatedAt":  "2025-09-07T13:17:16.899Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:17 - Executando teste: Atualizar memÃ³ria para teste2@teste.com - PUT /api/memories/68bd85dc3ff0fc7692810d98
+2025-09-07 10:17:17 - Resultado: Passou
+2025-09-07 10:17:17 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85dc3ff0fc7692810d98",
+                 "title":  "Atualizado: Memória curta",
+                 "description":  "Atualizado: Descrição simples",
+                 "date":  "2025-09-07T13:17:16.899Z",
+                 "userId":  "68bd85dc3ff0fc7692810d94",
+                 "createdAt":  "2025-09-07T13:17:16.899Z",
+                 "updatedAt":  "2025-09-07T13:17:17.117Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:17 - Executando teste: Deletar memÃ³ria para teste2@teste.com - DELETE /api/memories/68bd85dc3ff0fc7692810d98
+2025-09-07 10:17:17 - Resultado: Passou
+2025-09-07 10:17:17 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:17 - Executando teste: Criar memÃ³ria para teste2@teste.com: MemÃ³ria com tÃ­tulo muito longo que pode causar problemas de validaÃ§Ã£o ou exibiÃ§Ã£o - POST /api/memories
+2025-09-07 10:17:17 - Resultado: Passou
+2025-09-07 10:17:17 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória com título muito longo que pode causar problemas de validação ou exibição",
+                 "description":  "Descrição também longa para testar limites de caracteres e formatação",
+                 "date":  "2025-09-07T13:17:17.331Z",
+                 "userId":  "68bd85dc3ff0fc7692810d94",
+                 "_id":  "68bd85dd3ff0fc7692810d9f",
+                 "createdAt":  "2025-09-07T13:17:17.331Z",
+                 "updatedAt":  "2025-09-07T13:17:17.331Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:17 - Executando teste: Atualizar memÃ³ria para teste2@teste.com - PUT /api/memories/68bd85dd3ff0fc7692810d9f
+2025-09-07 10:17:17 - Resultado: Passou
+2025-09-07 10:17:17 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85dd3ff0fc7692810d9f",
+                 "title":  "Atualizado: Memória com título muito longo que pode causar problemas de validação ou exibição",
+                 "description":  "Atualizado: Descrição também longa para testar limites de caracteres e formatação",
+                 "date":  "2025-09-07T13:17:17.331Z",
+                 "userId":  "68bd85dc3ff0fc7692810d94",
+                 "createdAt":  "2025-09-07T13:17:17.331Z",
+                 "updatedAt":  "2025-09-07T13:17:17.437Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:17 - Executando teste: Deletar memÃ³ria para teste2@teste.com - DELETE /api/memories/68bd85dd3ff0fc7692810d9f
+2025-09-07 10:17:17 - Resultado: Passou
+2025-09-07 10:17:17 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:17 - Executando teste: Criar memÃ³ria para teste2@teste.com: MemÃ³ria com caracteres especiais: Ã¡Ã©Ã­Ã³Ãº Ã± @#$%^&*() - POST /api/memories
+2025-09-07 10:17:17 - Resultado: Passou
+2025-09-07 10:17:17 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória com caracteres especiais: áéíóú ñ @#$%^\u0026*()",
+                 "description":  "Descrição com símbolos: \u003c\u003e{}[]|\\",
+                 "date":  "2025-09-07T13:17:17.627Z",
+                 "userId":  "68bd85dc3ff0fc7692810d94",
+                 "_id":  "68bd85dd3ff0fc7692810da6",
+                 "createdAt":  "2025-09-07T13:17:17.627Z",
+                 "updatedAt":  "2025-09-07T13:17:17.627Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:17 - Executando teste: Atualizar memÃ³ria para teste2@teste.com - PUT /api/memories/68bd85dd3ff0fc7692810da6
+2025-09-07 10:17:17 - Resultado: Passou
+2025-09-07 10:17:17 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85dd3ff0fc7692810da6",
+                 "title":  "Atualizado: Memória com caracteres especiais: áéíóú ñ @#$%^\u0026*()",
+                 "description":  "Atualizado: Descrição com símbolos: \u003c\u003e{}[]|\\",
+                 "date":  "2025-09-07T13:17:17.627Z",
+                 "userId":  "68bd85dc3ff0fc7692810d94",
+                 "createdAt":  "2025-09-07T13:17:17.627Z",
+                 "updatedAt":  "2025-09-07T13:17:17.738Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:17 - Executando teste: Deletar memÃ³ria para teste2@teste.com - DELETE /api/memories/68bd85dd3ff0fc7692810da6
+2025-09-07 10:17:17 - Resultado: Passou
+2025-09-07 10:17:17 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:17 - Executando teste: Criar memÃ³ria para teste2@teste.com: MemÃ³ria futura - POST /api/memories
+2025-09-07 10:17:17 - Resultado: Passou
+2025-09-07 10:17:17 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória futura",
+                 "description":  "Descrição para data futura",
+                 "date":  "2025-09-07T13:17:17.957Z",
+                 "userId":  "68bd85dc3ff0fc7692810d94",
+                 "_id":  "68bd85dd3ff0fc7692810dad",
+                 "createdAt":  "2025-09-07T13:17:17.958Z",
+                 "updatedAt":  "2025-09-07T13:17:17.958Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:18 - Executando teste: Atualizar memÃ³ria para teste2@teste.com - PUT /api/memories/68bd85dd3ff0fc7692810dad
+2025-09-07 10:17:18 - Resultado: Passou
+2025-09-07 10:17:18 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85dd3ff0fc7692810dad",
+                 "title":  "Atualizado: Memória futura",
+                 "description":  "Atualizado: Descrição para data futura",
+                 "date":  "2025-09-07T13:17:17.957Z",
+                 "userId":  "68bd85dc3ff0fc7692810d94",
+                 "createdAt":  "2025-09-07T13:17:17.958Z",
+                 "updatedAt":  "2025-09-07T13:17:18.059Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:18 - Executando teste: Deletar memÃ³ria para teste2@teste.com - DELETE /api/memories/68bd85dd3ff0fc7692810dad
+2025-09-07 10:17:18 - Resultado: Passou
+2025-09-07 10:17:18 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:18 - Executando teste: Criar memÃ³ria para teste2@teste.com:  - POST /api/memories
+2025-09-07 10:17:18 - Resultado: Falhou
+2025-09-07 10:17:18 - Erro: O servidor remoto retornou um erro: (400) Solicitação Incorreta. (Status: 400)
+2025-09-07 10:17:18 - Executando teste: Listar memÃ³rias para teste2@teste.com - GET /api/memories
+2025-09-07 10:17:18 - Resultado: Passou
+2025-09-07 10:17:18 - Response: {
+    "success":  true,
+    "data":  [
+
+             ]
+}
+2025-09-07 10:17:18 - Iniciando testes para usuÃ¡rio: teste3@teste.com
+2025-09-07 10:17:18 - Executando teste: Registro de usuÃ¡rio teste3@teste.com - POST /api/auth/register
+2025-09-07 10:17:18 - Resultado: Passou
+2025-09-07 10:17:18 - Response: {
+    "success":  true,
+    "data":  {
+                 "user":  {
+                              "id":  "68bd85de3ff0fc7692810db8",
+                              "name":  "Teste3",
+                              "email":  "teste3@teste.com"
+                          },
+                 "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw"
+             }
+}
+2025-09-07 10:17:18 - Executando teste: Login de usuÃ¡rio teste3@teste.com - POST /api/auth/login
+2025-09-07 10:17:18 - Resultado: Passou
+2025-09-07 10:17:18 - Response: {
+    "success":  true,
+    "data":  {
+                 "user":  {
+                              "id":  "68bd85de3ff0fc7692810db8",
+                              "name":  "Teste3",
+                              "email":  "teste3@teste.com"
+                          },
+                 "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmQ4NWRlM2ZmMGZjNzY5MjgxMGRiOCIsImlhdCI6MTc1NzI1MTAzOCwiZXhwIjoxNzU3ODU1ODM4fQ.CF6oo5W6RqTgzHNcm1b7mPuuzlbhJVgycGZR13ltHiw"
+             }
+}
+2025-09-07 10:17:18 - Executando teste: Criar memÃ³ria para teste3@teste.com: MemÃ³ria curta - POST /api/memories
+2025-09-07 10:17:18 - Resultado: Passou
+2025-09-07 10:17:18 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória curta",
+                 "description":  "Descrição simples",
+                 "date":  "2025-09-07T13:17:18.909Z",
+                 "userId":  "68bd85de3ff0fc7692810db8",
+                 "_id":  "68bd85de3ff0fc7692810dbc",
+                 "createdAt":  "2025-09-07T13:17:18.909Z",
+                 "updatedAt":  "2025-09-07T13:17:18.909Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:18 - Executando teste: Atualizar memÃ³ria para teste3@teste.com - PUT /api/memories/68bd85de3ff0fc7692810dbc
+2025-09-07 10:17:19 - Resultado: Passou
+2025-09-07 10:17:19 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85de3ff0fc7692810dbc",
+                 "title":  "Atualizado: Memória curta",
+                 "description":  "Atualizado: Descrição simples",
+                 "date":  "2025-09-07T13:17:18.909Z",
+                 "userId":  "68bd85de3ff0fc7692810db8",
+                 "createdAt":  "2025-09-07T13:17:18.909Z",
+                 "updatedAt":  "2025-09-07T13:17:19.008Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:19 - Executando teste: Deletar memÃ³ria para teste3@teste.com - DELETE /api/memories/68bd85de3ff0fc7692810dbc
+2025-09-07 10:17:19 - Resultado: Passou
+2025-09-07 10:17:19 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:19 - Executando teste: Criar memÃ³ria para teste3@teste.com: MemÃ³ria com tÃ­tulo muito longo que pode causar problemas de validaÃ§Ã£o ou exibiÃ§Ã£o - POST /api/memories
+2025-09-07 10:17:19 - Resultado: Passou
+2025-09-07 10:17:19 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória com título muito longo que pode causar problemas de validação ou exibição",
+                 "description":  "Descrição também longa para testar limites de caracteres e formatação",
+                 "date":  "2025-09-07T13:17:19.227Z",
+                 "userId":  "68bd85de3ff0fc7692810db8",
+                 "_id":  "68bd85df3ff0fc7692810dc3",
+                 "createdAt":  "2025-09-07T13:17:19.227Z",
+                 "updatedAt":  "2025-09-07T13:17:19.227Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:19 - Executando teste: Atualizar memÃ³ria para teste3@teste.com - PUT /api/memories/68bd85df3ff0fc7692810dc3
+2025-09-07 10:17:19 - Resultado: Passou
+2025-09-07 10:17:19 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85df3ff0fc7692810dc3",
+                 "title":  "Atualizado: Memória com título muito longo que pode causar problemas de validação ou exibição",
+                 "description":  "Atualizado: Descrição também longa para testar limites de caracteres e formatação",
+                 "date":  "2025-09-07T13:17:19.227Z",
+                 "userId":  "68bd85de3ff0fc7692810db8",
+                 "createdAt":  "2025-09-07T13:17:19.227Z",
+                 "updatedAt":  "2025-09-07T13:17:19.374Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:19 - Executando teste: Deletar memÃ³ria para teste3@teste.com - DELETE /api/memories/68bd85df3ff0fc7692810dc3
+2025-09-07 10:17:19 - Resultado: Passou
+2025-09-07 10:17:19 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:19 - Executando teste: Criar memÃ³ria para teste3@teste.com: MemÃ³ria com caracteres especiais: Ã¡Ã©Ã­Ã³Ãº Ã± @#$%^&*() - POST /api/memories
+2025-09-07 10:17:19 - Resultado: Passou
+2025-09-07 10:17:19 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória com caracteres especiais: áéíóú ñ @#$%^\u0026*()",
+                 "description":  "Descrição com símbolos: \u003c\u003e{}[]|\\",
+                 "date":  "2025-09-07T13:17:19.640Z",
+                 "userId":  "68bd85de3ff0fc7692810db8",
+                 "_id":  "68bd85df3ff0fc7692810dca",
+                 "createdAt":  "2025-09-07T13:17:19.640Z",
+                 "updatedAt":  "2025-09-07T13:17:19.640Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:19 - Executando teste: Atualizar memÃ³ria para teste3@teste.com - PUT /api/memories/68bd85df3ff0fc7692810dca
+2025-09-07 10:17:19 - Resultado: Passou
+2025-09-07 10:17:19 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85df3ff0fc7692810dca",
+                 "title":  "Atualizado: Memória com caracteres especiais: áéíóú ñ @#$%^\u0026*()",
+                 "description":  "Atualizado: Descrição com símbolos: \u003c\u003e{}[]|\\",
+                 "date":  "2025-09-07T13:17:19.640Z",
+                 "userId":  "68bd85de3ff0fc7692810db8",
+                 "createdAt":  "2025-09-07T13:17:19.640Z",
+                 "updatedAt":  "2025-09-07T13:17:19.767Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:19 - Executando teste: Deletar memÃ³ria para teste3@teste.com - DELETE /api/memories/68bd85df3ff0fc7692810dca
+2025-09-07 10:17:19 - Resultado: Passou
+2025-09-07 10:17:19 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:19 - Executando teste: Criar memÃ³ria para teste3@teste.com: MemÃ³ria futura - POST /api/memories
+2025-09-07 10:17:19 - Resultado: Passou
+2025-09-07 10:17:19 - Response: {
+    "success":  true,
+    "data":  {
+                 "title":  "Memória futura",
+                 "description":  "Descrição para data futura",
+                 "date":  "2025-09-07T13:17:19.957Z",
+                 "userId":  "68bd85de3ff0fc7692810db8",
+                 "_id":  "68bd85df3ff0fc7692810dd1",
+                 "createdAt":  "2025-09-07T13:17:19.957Z",
+                 "updatedAt":  "2025-09-07T13:17:19.957Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:20 - Executando teste: Atualizar memÃ³ria para teste3@teste.com - PUT /api/memories/68bd85df3ff0fc7692810dd1
+2025-09-07 10:17:20 - Resultado: Passou
+2025-09-07 10:17:20 - Response: {
+    "success":  true,
+    "data":  {
+                 "_id":  "68bd85df3ff0fc7692810dd1",
+                 "title":  "Atualizado: Memória futura",
+                 "description":  "Atualizado: Descrição para data futura",
+                 "date":  "2025-09-07T13:17:19.957Z",
+                 "userId":  "68bd85de3ff0fc7692810db8",
+                 "createdAt":  "2025-09-07T13:17:19.957Z",
+                 "updatedAt":  "2025-09-07T13:17:20.046Z",
+                 "__v":  0
+             }
+}
+2025-09-07 10:17:20 - Executando teste: Deletar memÃ³ria para teste3@teste.com - DELETE /api/memories/68bd85df3ff0fc7692810dd1
+2025-09-07 10:17:20 - Resultado: Passou
+2025-09-07 10:17:20 - Response: {
+    "success":  true,
+    "message":  "Memory deleted successfully"
+}
+2025-09-07 10:17:20 - Executando teste: Criar memÃ³ria para teste3@teste.com:  - POST /api/memories
+2025-09-07 10:17:20 - Resultado: Falhou
+2025-09-07 10:17:20 - Erro: O servidor remoto retornou um erro: (400) Solicitação Incorreta. (Status: 400)
+2025-09-07 10:17:20 - Executando teste: Listar memÃ³rias para teste3@teste.com - GET /api/memories
+2025-09-07 10:17:20 - Resultado: Passou
+2025-09-07 10:17:20 - Response: {
+    "success":  true,
+    "data":  [
+
+             ]
+}
+2025-09-07 10:17:20 - Executando testes adicionais
+2025-09-07 10:17:20 - Executando teste: Acesso sem token (deve falhar com 401) - GET /api/memories
+2025-09-07 10:17:20 - Resultado: Falhou
+2025-09-07 10:17:20 - Erro: O servidor remoto retornou um erro: (401) Não Autorizado. (Status: 401)
+2025-09-07 10:17:20 - Executando teste: Criar memÃ³ria com token invÃ¡lido - POST /api/memories
+2025-09-07 10:17:20 - Resultado: Falhou
+2025-09-07 10:17:20 - Erro: O servidor remoto retornou um erro: (401) Não Autorizado. (Status: 401)
+2025-09-07 10:17:20 - Gerando relatÃ³rio CSV
+2025-09-07 10:17:20 - Gerando relatÃ³rio JSON
+2025-09-07 10:17:20 - Gerando documentaÃ§Ã£o da API
+2025-09-07 10:17:20 - Testes e geraÃ§Ã£o de relatÃ³rios concluÃ­dos
+2025-09-07 10:17:20 - Arquivos gerados: api-test-report.csv, api-test-report.json, API-Documentation.md
